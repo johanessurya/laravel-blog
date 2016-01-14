@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('front-home');
 });
 
+Route::get('/api/v1/articles/{id?}', 'Articles@index');
+// Route::post('/api/v1/articles', 'Articles@store');
+// Route::post('/api/v1/articles/{id}', 'Articles@update');
+// Route::delete('/api/v1/articles/{id}', 'Articles@destroy');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
