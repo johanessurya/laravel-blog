@@ -8,17 +8,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>The Swiss Website Template | Home :: w3layouts</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
 <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- start slider -->
-	<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery.min.js"></script>
-    <script type='text/javascript' src="js/jquery.mobile.customized.min.js"></script>
-    <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
-    <script type='text/javascript' src="js/camera.min.js"></script>
-    <script>
+	<link href="{{ asset('css/camera.css') }}" rel="stylesheet" type="text/css" media="all" />
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
+  <script type='text/javascript' src="{{ asset('js/jquery.mobile.customized.min.js') }}"></script>
+  <script type='text/javascript' src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
+  <script type='text/javascript' src="{{ asset('js/camera.min.js') }}"></script>
+  <script>
 		jQuery(function(){
 
 			jQuery('#camera_wrap_2').camera({
