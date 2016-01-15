@@ -1,10 +1,15 @@
-app.controller('employeesController', function($scope, $http, API_URL) {
+app.controller('ArticlesController', function($scope, $http, API_URL) {
+    $scope.test = {
+      name : 'This is from AngularJS'
+    };
+
     //retrieve employees listing from API
     $http.get(API_URL + "articles")
             .success(function(response) {
                 $scope.articles = response;
-                console.log($scope.articles);
             });
+
+    console.log($scope.test);
 
     //show modal form
     $scope.toggle = function(modalstate, id) {

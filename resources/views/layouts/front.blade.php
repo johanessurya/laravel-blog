@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html>
+<html ng-app="LaravelBlogApp">
 <head>
 <title>The Swiss Website Template | Home :: w3layouts</title>
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
@@ -17,7 +17,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
   <script type='text/javascript' src="{{ asset('js/jquery.mobile.customized.min.js') }}"></script>
   <script type='text/javascript' src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
-  <script type='text/javascript' src="{{ asset('js/camera.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('js/camera.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('js/angular.min.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('app/app.js') }}"></script>
+	<script type='text/javascript' src="{{ asset('app/controllers/articles.js') }}"></script>
   <script>
 		jQuery(function(){
 
@@ -31,14 +34,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 <!-- end slider -->
 </head>
-<body>
+<body ng-controller="ArticlesController">
 <!-- start header -->
 <div class="header-bg">
 <div class="wrap">
 <div class="header">
 		<div class="nav">
 				<ul>
-						<li class="a"><a class="active" href="index.html">Home</a> </li>
+						<li class="a"><a class="active" href="index.html">Home || @{{ test.name }}</a> </li>
 						<li><a href="ask.html">Ask</a></li>
 						<li><a href="archive.html">Archive</a>  </li>
 						<li><a href="contact.html">Contact</a> </li>
