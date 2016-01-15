@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('front-home');
 });
 
+Route::get('/admin', function () {
+    return view('back-home');
+});
+
 Route::get('/api/v1/articles/{id?}', 'Articles@index');
 // Route::post('/api/v1/articles', 'Articles@store');
 // Route::post('/api/v1/articles/{id}', 'Articles@update');
